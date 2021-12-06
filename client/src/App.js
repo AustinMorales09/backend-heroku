@@ -4,10 +4,12 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 import About from './components/About'
 import {BrowserRouter} from 'react-router-dom'
+import Navbar from './components/Navbar'
 class App extends Component {
   render() {
     return (
       <div>
+      <Navbar/>
         <BrowserRouter>
 
           <Route exact path="/" component={Home} />
